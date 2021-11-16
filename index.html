@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>¿Que es HTML?</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav id="navbar">
+			<header>
+				<h1>HTML: Lenguaje de marcado de hipertexto</h1>
+			</header>
+			<ul>
+				<li><a href="#¿Que_es_HTML?" class="nav-link">¿Que es HTML?</a></li>
+				<li><a href="#Anatomía_de_un_elemento_HTML" class="nav-link">Anatomía de un elemento HTML</a></li>
+				<li><a href="#Elementos_anidados" class="nav-link">Elementos anidados</a></li>
+				<li>
+					<a href="#Elementos_de_bloque_y_elementos_en_línea"
+						 class="nav-link">Elementos de bloque y elementos en línea</a
+					>
+				</li>
+				<li><a href="#Atributos" class="nav-link">Atributos</a></li>
+				<li><a href="#Referencia" class="nav-link">Referencia</a></li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+			<section class="main-section" id="¿Que_es_HTML?">
+				<header>¿Que es HTML?</header>
+				<p>
+					<strong>HTML</strong> (Lenguaje de Marcado de Hipertexto, del inglés
+					HyperText Markup Language) es el componente más básico de la Web.
+					Define el significado y la estructura del contenido web.<br />
+					Además de HTML, generalmente se utilizan otras tecnologías para
+					describir la apariencia/presentación de una página web (<a
+						href="https://developer.mozilla.org/es/docs/Web/CSS"
+						>CSS</a
+					>) o la funcionalidad/comportamiento (<a
+						href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+						>JavaScript</a
+					>).
+				</p>
+				<p>
+					"Hipertexto" hace referencia a los enlaces que conectan páginas web
+					entre sí, ya sea dentro de un único sitio web o entre sitios web. Los
+					enlaces son un aspecto fundamental de la Web. Al subir contenido a
+					Internet y vincularlo a las páginas creadas por otras personas, te
+					conviertes en un participante activo en la «World Wide Web» (Red
+					Informática Mundial).
+				</p>
+				<p>
+					HTML utiliza "marcas" para etiquetar texto, imágenes y otro contenido
+					para mostrarlo en un navegador Web. Las marcas HTML incluyen
+					"elementos" especiales como:
+				</p>
+				<ul>
+					<li><code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>,</li>
+					<li>
+						<code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>,
+						<code>&lt;footer&gt;</code>, <code>&lt;aside&gt;</code>,
+					</li>
+					<li><code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>,</li>
+					<li>
+						<code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>,
+						<code>&lt;span&gt;</code>,
+					</li>
+					<li><code>&lt;canvas&gt;</code>,</li>
+
+					<li>
+						<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>,
+						<code>&lt;li&gt;</code>,
+					</li>
+					<li>y muchos otros.</li>
+				</ul>
+
+				<p>
+					Un elemento HTML se distingue de otro texto en un documento mediante
+					"etiquetas", que consisten en el nombre del elemento rodeado por
+					"&lt;" y "&gt;". El nombre de un elemento dentro de una etiqueta no
+					distingue entre mayúsculas y minúsculas. La mejor práctica, sin
+					embargo, es escribir todas las etiquetas en minúsculas para mantener
+					la coherencia y legibilidad, entre otros motivos.
+				</p>
+				<p>
+					Las etiquetas que delimitan un fragmento de contenido pueden hacer que
+					dicho contenido enlace con otra página, ponga una palabra en cursiva,
+					etcétera. Por ejemplo, dada la siguiente línea de contenido:
+				</p>
+				<div class="code-fragment">
+					<pre>Mi gato es muy gruñón</pre>
+				</div>
+				<p>
+					Si queremos que la línea sea independiente de otras, podemos
+					especificar que es un párrafo encerrándola con una etiqueta de
+					elemento de párrafo (<a href="/es/docs/Web/HTML/Element/p"
+						><code>&lt;p&gt;</code></a
+					>):
+				</p>
+				<div class="code-fragment">
+					<pre>&lt;p&gt;Mi gato es muy gruñón&lt;/p&gt;</pre>
+				</div>
+			</section>
+			<section class="main-section" id="Anatomía_de_un_elemento_HTML">
+				<header>Anatomía de un elemento HTML</header>
+				<p>Exploremos un poco el elemento párrafo:</p>
+				<p>
+					<img
+						alt="Anatomía de los elementos HTML"
+						src="https://mdn.mozillademos.org/files/11913/htmlexp.png"
+						loading="lazy"
+					/>
+				</p>
+				<p>Las principales partes de nuestro elemento son:</p>
+				<ul>
+					<li>
+						La <strong>etiqueta de apertura</strong>: consiste en el nombre del
+						elemento (en este caso, p), encerrado entre
+						<strong>paréntesis angulares</strong> de apertura y cierre. Esta
+						etiqueta de apertura marca dónde comienza el elemento o comienza a
+						tener efecto. En este ejemplo, precede al comienzo del texto del
+						párrafo.
+					</li>
+					<li>
+						El <strong>contenido</strong>: Este es el contenido del elemento. En
+						este ejemplo, es el texto del párrafo.
+					</li>
+					<li>
+						La <strong>etiqueta de cierre</strong>: Es lo mismo que la etiqueta
+						de apertura, excepto que incluye una barra diagonal antes del nombre
+						del elemento. Esto indica dónde termina el elemento; en este caso,
+						dónde finaliza el párrafo. No incluir una etiqueta de cierre es un
+						error común de principiante, y puede conducir a extraños resultados.
+					</li>
+				</ul>
+				<p>
+					El <strong>elemento</strong> lo conforman la etiqueta de apertura,
+					seguida del contenido, seguido de la etiqueta de cierre.
+				</p>
+			</section>
+			<section class="main-section" id="Elementos_anidados">
+				<header>Elementos anidados</header>
+				<p>
+					Se pueden poner elementos dentro de otros elementos. Esto se llama
+					<strong>anidamiento</strong>. Si quisiéramos decir que nuestro gato es
+					<strong>muy</strong> gruñón, podríamos encerrar la palabra
+					<em>muy</em> en un elemento
+					<a href="/es/docs/Web/HTML/Element/strong"
+						><code>&lt;strong&gt;</code></a
+					>
+					para que aparezca destacada.
+				</p>
+				<div class="code-fragment">
+					<pre>
+&lt;p&gt;Mi gato es &lt;strong&gt;muy&lt;/strong&gt; gruñón.&lt;/p&gt;</pre
+					>
+				</div>
+				<p>
+					Hay una forma correcta e incorrecta de anidar. En el ejemplo anterior,
+					primero abrimos el elemento <code>p</code>, luego abrimos el elemento
+					<code>strong</code>. Para un anidamiento adecuado, primero debemos
+					cerrar el elemento <code>strong</code>, antes de cerrar el
+					<code>p</code>.
+				</p>
+			</section>
+			<section class="main-section" id="Elementos_de_bloque_y_elementos_en_línea">
+				<header>Elementos de bloque y elementos en línea</header>
+				<p>
+					Hay dos categorías importantes de elementos en HTML: los elementos de
+					bloque y los elementos en línea.
+				</p>
+				<ul>
+					<li>
+						Los elementos de bloque forman un bloque visible en la página.
+						Aparecerán en una línea nueva después de cualquier contenido
+						anterior. Cualquier contenido que vaya después también aparecerá en
+						una línea nueva. Los elementos a nivel de bloque suelen ser
+						elementos estructurales de la página. Por ejemplo, un elemento a
+						nivel de bloque puede representar encabezados, párrafos, listas,
+						menús de navegación o pies de página. Un elemento a nivel de bloque
+						no estaría anidado dentro de un elemento en línea, pero podría estar
+						anidado dentro de otro elemento a nivel de bloque.
+					</li>
+					<li>
+						Los elementos en línea están contenidos dentro de elementos de
+						bloque y delimitan solo pequeñas partes del contenido del documento;
+						(no párrafos enteros o agrupaciones de contenido) Un elemento en
+						línea no hará que aparezca una nueva línea en el documento. Suele
+						utilizarse con texto. Por ejemplo es el caso de un elemento
+						<a href="/es/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a>
+						(hipervínculo) o elementos de énfasis como
+						<a href="/es/docs/Web/HTML/Element/em"><code>&lt;em&gt;</code></a> o
+						<a href="/es/docs/Web/HTML/Element/strong"
+							><code>&lt;strong&gt;</code></a
+						>.
+					</li>
+				</ul>
+			</section>
+			<section class="main-section" id="Atributos">
+				<header>Atributos</header>
+				<p>
+					Los elementos también pueden tener atributos. Los atributos tienen
+					este aspecto:
+				</p>
+				<img
+					alt="atributo html"
+					src="https://mdn.mozillademos.org/files/11915/htmlatributos.png"
+					loading="lazy"
+				/>
+				<p>
+					Los atributos contienen información extra sobre el elemento que no se
+					mostrará en el contenido. En este caso, el atributo
+					<code>class</code> asigna al elemento un identificador que se puede
+					utilizar para dotarlo de información de estilo.
+				</p>
+				<p>Un atributo debería tener:</p>
+				<ul>
+					<li>
+						Un espacio entre este y el nombre del elemento. (Para un elemento
+						con más de un atributo, los atributos también deben estar separados
+						por espacios).
+					</li>
+					<li>El nombre del atributo, seguido por un signo igual.</li>
+					<li>
+						Un valor del atributo, rodeado de comillas de apertura y cierre.
+					</li>
+				</ul>
+			</section>
+      <section class="main-section" id="Referencia">
+        <header>
+          Referencia
+        </header>
+        <p>
+          Toda la documentación de esta página fue extraida de <a href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started#aprendizaje_activo_crear_tu_primer_elemento_html">MDN</a>
+        </p>
+      </section>
+		</main>
+	</body>
+</html>
